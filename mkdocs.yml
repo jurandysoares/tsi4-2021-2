@@ -1,0 +1,11 @@
+site_name: Aplicações de Redes de Computadores
+site_dir: /var/www/html
+
+theme:
+  name: material
+  language: pt
+
+plugins:
+  - search
+  - mermaid2
+

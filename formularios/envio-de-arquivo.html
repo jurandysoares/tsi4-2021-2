@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de arquivo</title>
+</head>
+<body>
+    <h1>Envio de arquivo</h1>
+    <a href="https://www.php.net/manual/pt_BR/features.file-upload.post-method.php">Fonte deste exemplo.</a>
+    <!-- O tipo de encoding de dados, enctype, DEVE ser especificado abaixo -->
+<form enctype="multipart/form-data" action="__URL__" method="POST">
+    <!-- MAX_FILE_SIZE deve preceder o campo input -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <!-- O Nome do elemento input determina o nome da array $_FILES -->
+    Enviar esse arquivo: <input name="userfile" type="file" />
+    <input type="submit" value="Enviar arquivo" />
+</form>
+</body>
+</html>
